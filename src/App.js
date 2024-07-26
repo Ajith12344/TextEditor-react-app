@@ -4,7 +4,8 @@ import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import SuprSendInbox from '@suprsend/react-inbox'
+import 'react-toastify/dist/ReactToastify.css'
 
 
 function App() {

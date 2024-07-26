@@ -1,6 +1,8 @@
  import React from 'react'
  import propTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
+import SuprSendInbox from '@suprsend/react-inbox'
+import 'react-toastify/dist/ReactToastify.css' 
  
  export default function Navbar(props) {
    return (
@@ -32,6 +34,11 @@ import { NavLink } from 'react-router-dom'
    <input className="form-check-input" onClick={props.toggleMode}type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
    <label className="form-check-label" for="flexSwitchCheckDefault">Enable dark mode</label>
 </div>
+<SuprSendInbox
+   workspaceKey = "<workspace_key>"
+   subscriberId = "<subscriber_id>"
+  distinctId = "<distinct_id>" 
+/>
       </div>
     </div>
   </nav>
